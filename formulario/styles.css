@@ -1,0 +1,79 @@
+* {
+    background-color: azure;
+}
+
+html {
+    font: normal 22px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 50px;
+}
+
+.linea {
+    display: flex;
+}
+
+.hr1 {
+    width: 43%;
+    text-align: left;
+    margin-left: 0;
+}
+
+.hr2 {
+    width: 43%;
+    text-align: right;
+    margin-right: 0;
+}
+
+.formulario {
+    margin: 10px 15px;
+    padding: 15px 50px;
+    float: right;
+    width: 55%;
+    border: 1px solid;
+    border-radius: 7px;
+}
+
+input[type=button],input[type=submit], input[type=reset] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #3b8be6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
