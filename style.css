@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 125px; 
+}
+
+.enlace {
+    position: absolute;
+    padding: 40px 50px;
+}
+
+.titulo {
+    height: 40px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 80px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 125px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 5px;
+    padding: 7px 13px;
+}
+
+li a.active, li a:hover {
+    background-color: orange;
+    transition: .5s;
+}
+
+.checkbts{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.main {
+    background-image: url(img/fondo.jpg);
+    width: 100%;
+    height: calc(100vh - 125px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 600px;
+    height: 540px;
+    margin-left: 40px;
+    color: black;
+
+}
+
+.container h1 {
+    font-size: 67px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container h3 {
+    padding: 30px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+}
+
+.boton {
+    background-color: orange;
+    border: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cnt2 {
+    width: 100%;
+    height: 300px;
+text-align: center;
+}
+
+.cnt2 h1 {
+    font-size: 35px;
+    padding-top: 60px;
+}
+
+.cnt2 h3 {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.btn2 {
+    background-color: orange;
+    border: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.barrita {
+    border: 1px solid black;
+    width: 10%;
+}
+
+.cnt3 {
+    background-color: rgb(243, 178, 58);
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    color: white
+}
+
+.cnt3 h1 {
+    font-size: 40px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.cnt3 hr {
+    border: 1px solid white;
+    width: 10%;
+}
+
+.cnt3 h2 {
+    font-size: 25px;
+    padding: 0 20%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.btn3 {
+    background-color: rgb(255, 255, 255);
+    border: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    color: rgb(90, 69, 69);
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cnt4 {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+.cnt4 h1{
+    font-size: 35px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.cnt4 hr {
+    width: 10%;
+    border: 1px solid black;
+}
+
+.thebox {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+}
+
+.cajitas {
+    width: 180px;
+    height: 200px;
+    left: 3px;
+    right: 3px;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.logos {
+    width: 120px;
+}
+
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color:gray;
+}
+
+.footer .grupo_1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer .grupo_1 .boxing {
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer .grupo_1 .boxing img {
+    background-color: aliceblue;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+}
+
+.footer .grupo_1 .boxing p {
+    color: aliceblue;
+    padding-right: 20px;
+}
+
+.footer .grupo_1 .boxing h2 {
+    padding-bottom: 30px;
+}
+
+.footer .grupo_1 .boxing .l_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .grupo_1 .boxing .links {
+    font-size: 20px;
+    color: rgb(36, 98, 2);
+    margin: 10px 0;
+    transition: all 300ms ease;
+}
+
+.footer .grupo_1 .boxing .links:hover {
+    color: aquamarine;
+}
+
+.footer .grupo_1 .boxing .red_social a {
+    background-color: aquamarine;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: black;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer .grupo_1 .boxing .red_social a:hover {
+    color: orange;
+}
+
+.footer .grupo_2 {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 1060px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .checkbts{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: grey;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: brown;
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .container {
+        width: 90%;
+        height: 540px;
+        margin-left: 40px;
+        color: black;
+    
+    }
+
+    .cnt4 {
+        width: 100%;
+        height: 900px;
+        text-align: center;
+    }
+
+    .thebox {
+        width: 100%;
+        height: 800px;
+        padding: 0 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer {
+        height: 720px;
+    }
+
+    .footer .grupo_1 {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

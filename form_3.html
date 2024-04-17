@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_3.css">
+    <title>Comprobante</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/elrefugio.png" alt="">
+        </div>
+        <div class="titulo">
+            <h1><b>Comprobante de Existencia para Registro con Microchip</b></h1>
+            <br>
+            <h2>Mascotas y Animales de Compañia</h2>
+        </div>
+    </header>
+    <main class="container">
+        <form action="">
+            <h2>DATOS DEL ANIMAL</h2>
+            <div class="parte_1">
+                <div class="sub1">
+                    <label for="nombre" >Nombre:</label>
+                    <input type="text" id="nombre" placeholder="nombre">
+                    <br>
+                    <label for="">Sexo:</label>
+                    <input type="radio" id="Macho" name="sexo" value="perro">
+                    <label for="Macho">Macho</label>
+                    <input type="radio" id="Hembra" name="sexo" value="Hembra">
+                    <label for="Hembra">Hembra</label>
+                    <br>
+                    <label for="">Esterilizado:</label>
+                    <input type="radio" id="Macho" name="esterilizado" value="si">
+                    <label for="si">SI</label>
+                    <input type="radio" id="no" name="esterilizado" value="no">
+                    <label for="no">NO</label>
+                    <br>
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+    
+                <div class="sub2">
+                    <label for="">Especie:</label>
+                    <input type="radio" id="perro" name="especie" value="perro">
+                    <label for="perro">Perro</label>
+                    <input type="radio" id="gato" name="especie" value="gato">
+                    <label for="gato">gato</label>
+                    <br>
+                    <label for="raza">Raza:</label>
+                    <input type="text" id="raza" placeholder="raza">
+                    <br>
+                    <label for="">Color:</label>
+                    <input type="text" name="color" id="color" placeholder="color">
+                    <br>
+                    <label for="procedimineto">Tipo de Procedimiento:</label>
+                    <input type="radio" name="procedimineto" id="implatacion" value="no">
+                    <label for="implantacion">Implantacion</label>
+                    <input type="radio" name="procedimineto" id="verificacion" value="si">
+                    <label for="verificacion">Verificacion</label>
+                </div>
+            </div>
+            <div class="parte_2">
+                <label for="modo">Modo de Obtencion</label>
+                <input type="radio" id="recojido" name="modo" value="recojido">
+                <label for="recorido">Recojido</label>
+                <input type="radio" id="reubicacion" name="modo" value="reubicacion">
+                <label for="reubicacion">Reubicacion</label>
+                <input type="radio" id="Regalo" name="modo" value="Regalo">
+                <label for="regalo">Regalo</label>
+                <input type="radio" id="casa" name="modo" value="casa">
+                <label for="casa">Nacido en Casa</label>
+                <input type="radio" id="Compra" name="modo" value="Compra">
+                <label for="Compra">Compra</label>
+                <p>(*si su mascota es adoptada marque recogido o reubicado)</p>
+                <label for="tenencia">Razon de Tenencia:</label>
+                <input type="radio" name="tenencia" id="compañia" value="compañia">
+                <label for="compañia">Compañia</label>
+                <input type="radio" name="tenencia" id="asistencia" value="asistencia">
+                <label for="asistencia">Asistencia</label>
+                <input type="radio" name="tenencia" id="terapia" value="terapia">
+                <label for="terapia">Terapia</label>
+                <input type="radio" name="tenencia" id="trabajo" value="trabajo">
+                <label for="trabajo">Trabajo</label>
+                <input type="radio" name="tenencia" id="seguridad" value="seguridad">
+                <label for="seguridad">Seguridad</label>
+                <input type="radio" name="tenencia" id="trabajo" value="trabajo">
+                <label for="trabajo">Trabajo</label>
+                <input type="radio" name="tenencia" id="deporte" value="deporte">
+                <label for="deporte">Deporte</label>
+                <input type="radio" name="tenencia" id="exposicion" value="exposicion">
+                <label for="exposicion">Exposicion</label>
+                <input type="radio" name="tenencia" id="reproduccion" value="reproduccion">
+                <label for="reproduccion">Reproduccion</label>
+                <input type="radio" name="tenencia" id="caza" value="caza">
+                <label for="caza">Caza</label>
+            </div>
+        </form>
+        <br>
+        <form action="">
+            <h2>DATOS MEDICOS VETERINARIO</h2>
+            <p>En el caso del Tipo de procedimiento ‘Verificación’, los datos pueden ser de un Técnico Veterinario.</p>
+            <div class="parte_3">
+                <div class="sub31">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="nombres">
+                    <br>
+                    <label for="rut">RUT:</label>
+                    <input type="text" name="rut" id="rut" placeholder="Rut">
+                    <br>
+                    <label for="comuna">Comuna:</label>
+                    <input type="text" id="comuna" placeholder="comuna">
+                </div>
+                <div class="sub32">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" placeholder="apellidos">
+                    <br>
+                    <label for="veterinario"></label>
+                    <input type="radio" name="veterinario" id="medico" value="medico">
+                    <label for="medico">Medico Veterinario</label>
+                    <input type="radio" name="veterinario" id="tecnico"
+                    value="tecnico">
+                    <label for="tecnico">Medico Veterinario</label>
+                    <br>
+                    <label for="fecha">Fecha de Procedimiento</label>
+                    <input type="date">
+                </div>
+            </div>
+        </form>
+        <div>
+            <button class="boton">ENVIAR DATOS</button>
+        </div>
+    </main>
+</body>
+</html>
