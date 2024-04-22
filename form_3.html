@@ -12,9 +12,11 @@
             <img src="img/elrefugio.png" alt="">
         </div>
         <div class="titulo">
-            <h1><b>Comprobante de Existencia para Registro con Microchip</b></h1>
-            <br>
-            <h2>Mascotas y Animales de Compañia</h2>
+            <h1>Comprobante de Existencia para Registro con Microchip</h1>
+            <h1>Mascotas y Animales de Compañia</h1>
+        </div>
+        <div class="log22">
+            <img src="img/log22.png" >
         </div>
     </header>
     <main class="container">
@@ -22,39 +24,39 @@
             <h2>DATOS DEL ANIMAL</h2>
             <div class="parte_1">
                 <div class="sub1">
-                    <label for="nombre" >Nombre:</label>
-                    <input type="text" id="nombre" placeholder="nombre">
+                    <label for="nombre" ></label>
+                    <input type="text" id="nombre" value="Nombre:">
                     <br>
-                    <label for="">Sexo:</label>
+                    <label for=""><b>Sexo:</b></label>
                     <input type="radio" id="Macho" name="sexo" value="perro">
                     <label for="Macho">Macho</label>
                     <input type="radio" id="Hembra" name="sexo" value="Hembra">
                     <label for="Hembra">Hembra</label>
                     <br>
-                    <label for="">Esterilizado:</label>
+                    <label for=""><b>Esterilizado:</b></label>
                     <input type="radio" id="Macho" name="esterilizado" value="si">
                     <label for="si">SI</label>
                     <input type="radio" id="no" name="esterilizado" value="no">
                     <label for="no">NO</label>
                     <br>
-                    <label for="fecha">Fecha de Nacimiento</label>
+                    <label for="fecha"><b>Fecha de Nacimiento</b></label>
                     <input type="date" name="fecha" id="fecha">
                 </div>
     
                 <div class="sub2">
-                    <label for="">Especie:</label>
+                    <label for=""><b>Especie:</b></label>
                     <input type="radio" id="perro" name="especie" value="perro">
                     <label for="perro">Perro</label>
                     <input type="radio" id="gato" name="especie" value="gato">
                     <label for="gato">gato</label>
                     <br>
-                    <label for="raza">Raza:</label>
-                    <input type="text" id="raza" placeholder="raza">
+                    <label for="raza"></label>
+                    <input type="text" id="raza" value="Raza:">
                     <br>
-                    <label for="">Color:</label>
-                    <input type="text" name="color" id="color" placeholder="color">
+                    <label for=""></label>
+                    <input type="text" name="color" id="color" value="Color:">
                     <br>
-                    <label for="procedimineto">Tipo de Procedimiento:</label>
+                    <label for="procedimineto"><b>Tipo de Procedimiento:</b></label>
                     <input type="radio" name="procedimineto" id="implatacion" value="no">
                     <label for="implantacion">Implantacion</label>
                     <input type="radio" name="procedimineto" id="verificacion" value="si">
@@ -62,7 +64,7 @@
                 </div>
             </div>
             <div class="parte_2">
-                <label for="modo">Modo de Obtencion</label>
+                <label for="modo"><b>Modo de Obtencion</b></label>
                 <input type="radio" id="recojido" name="modo" value="recojido">
                 <label for="recorido">Recojido</label>
                 <input type="radio" id="reubicacion" name="modo" value="reubicacion">
@@ -73,8 +75,8 @@
                 <label for="casa">Nacido en Casa</label>
                 <input type="radio" id="Compra" name="modo" value="Compra">
                 <label for="Compra">Compra</label>
-                <p>(*si su mascota es adoptada marque recogido o reubicado)</p>
-                <label for="tenencia">Razon de Tenencia:</label>
+                <p><i>(*si su mascota es adoptada marque recogido o reubicado)</i></p>
+                <label for="tenencia"><b>Razon de Tenencia:</b></label>
                 <input type="radio" name="tenencia" id="compañia" value="compañia">
                 <label for="compañia">Compañia</label>
                 <input type="radio" name="tenencia" id="asistencia" value="asistencia">
@@ -85,8 +87,6 @@
                 <label for="trabajo">Trabajo</label>
                 <input type="radio" name="tenencia" id="seguridad" value="seguridad">
                 <label for="seguridad">Seguridad</label>
-                <input type="radio" name="tenencia" id="trabajo" value="trabajo">
-                <label for="trabajo">Trabajo</label>
                 <input type="radio" name="tenencia" id="deporte" value="deporte">
                 <label for="deporte">Deporte</label>
                 <input type="radio" name="tenencia" id="exposicion" value="exposicion">
@@ -103,18 +103,18 @@
             <p>En el caso del Tipo de procedimiento ‘Verificación’, los datos pueden ser de un Técnico Veterinario.</p>
             <div class="parte_3">
                 <div class="sub31">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" placeholder="nombres">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" value="Nombres:">
                     <br>
-                    <label for="rut">RUT:</label>
-                    <input type="text" name="rut" id="rut" placeholder="Rut">
+                    <label for="rut"></label>
+                    <input type="text" name="rut" id="rut" value="Rut:">
                     <br>
-                    <label for="comuna">Comuna:</label>
-                    <input type="text" id="comuna" placeholder="comuna">
+                    <label for="comuna"></label>
+                    <input type="text" id="comuna" value="Comuna:">
                 </div>
                 <div class="sub32">
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" id="apellidos" placeholder="apellidos">
+                    <label for="apellidos"></label>
+                    <input type="text" id="apellidos" value="Apellidos:">
                     <br>
                     <label for="veterinario"></label>
                     <input type="radio" name="veterinario" id="medico" value="medico">
@@ -128,8 +128,16 @@
                 </div>
             </div>
         </form>
-        <div>
-            <button class="boton">ENVIAR DATOS</button>
+        <div class="foot">
+            <div class="first">
+                <img src="img/log11.png" class="xd1">
+            </div>
+            <div class="second">
+                <button class="boton">ENVIAR DATOS</button>
+            </div>
+            <div class="three">
+                <img src="img/logo_form_2.jpg" class="xd">
+            </div>
         </div>
     </main>
 </body>
