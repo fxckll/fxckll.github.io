@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/style_b.css">
+    <link rel="stylesheet" href="assets/styles/style_c.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Registra</title>
 </head>
@@ -14,9 +13,7 @@
             <i class="fa-solid fa-bars"></i>
         </label>
         <a href="#" class="enlace">
-            <h1 class="titulo">Registro Nacional
-
-            </h1>
+            <h1 class="titulo">Registro Nacional</h1>
         </a>
         <ul>
             <li><a href="index.html" class="active">Inicio</a></li>
@@ -28,27 +25,32 @@
     </nav>
 
     <div class="cnt3" id="requisitos">
-        <h1>Ingreso al Registro Nacional de Tenencia Responsable</h1>
+        <h1>Consultas</h1>
         <center><hr></center>
-        <h2>Seleccione la forma en que quiere ingresar al sistema: </h2>
-        <br>
+        <div class="txt">
+            <p>En el siguiente cuadro podrá consultar, mediante el número de microchip o identificador de dispositivo externo de la mascota, algunos datos asociados a animales extraviados que se encuentren ingresados en el Registro Nacional de Tenencia Responsable de Mascotas y Animales de Compañía .</p>
+            <br>
+            <p><b>Si el animal se encuentra registrado, debe activar el botón azul 'Contactar Responsable'</b>, luego completar el formulario y enviarlo. De este modo, Ud. recibirá un correo con los datos de la persona responsable del animal (datos de contacto) y ésta, a su vez, recibirá un correo con los datos de contacto que Ud ingresó en el formulario. Usando estos datos podrá comunicarse a la brevedad y coordinar el reencuentro del animal con su familia.</p>
+            <br>
+            <p><b>Si el animal no se encuentra registrado</b>, o bien no hay respuesta del tenedor responsable, envíenos su nombre, teléfono y correo electrónico, indicando la especie del animal de compañía (gato o perro), su número de microchip, región y comuna del hallazgo, a la casilla electrónica: <a href="tenenciaresponsable@subdere.gov.cl">tenenciaresponsable@subdere.gov.cl</a></p>
+        </div>
     </div>
     <main class="cnt4">
-        <div class="left">
-            <div class="cajita1">
-                <h2>Ingresar con Clave Unica</h2>
-                <br>
-                <p>Para entrar necesitas tu Clave Única, la misma con que puedes acceder a todos los servicios del Estado, de manera fácil y segura ya que es como tu carnet de identidad digital.</p>
-                <a href="form_1.html"><button type="submit">Ingresar</button></a>
+        <form action="">
+            <div class="formulario">
+                <label for="identificador">Microchip/Identificador</label>
+                <input type="text" id="identificador">
+                <br><br>
+                <label for="">Confirmacion Identidad</label>
+                <input type="checkbox" class="checkbox">
             </div>
-        </div>
-        <div class="right">
-            <div class="cajita2">
-                <h2>Ingresar con Clave Unica</h2>
-                <p>Para entrar necesitas tu Clave Única, la misma con que puedes acceder a todos los servicios del Estado, de manera fácil y segura ya que es como tu carnet de identidad digital.</p>
-                <a href="form_2.html"><button type="button">Ingresar</button></a>
+            <br>
+            <hr>
+            <div class="botones">
+                <button class="btnf1"><b>Limpiar</b></button>
+                <button  class="btnf2"><b>Consultar</b></button>
             </div>
-        </div>
+        </form>
     </main>
     <footer class="footer">
         <div class="grupo_1">

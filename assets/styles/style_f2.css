@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 240, 250);
+}
+
+.container {
+    width: 380px;
+    height: 600px;
+    margin: 0 500px;
+    margin: auto;
+}
+
+.container .logo{
+    text-align: center;
+}
+.container .logo img {
+    width: 190px;
+    padding: 20px 0;
+}
+
+form {
+    text-align: center;
+    background-color: white;
+    padding: 60px 0;
+    border: 1px solid black;
+}
+
+form h1 {
+    font-size: 22px;
+    color: rgb(81, 81, 197);
+    padding-bottom: 20px;
+}
+
+.rut {
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.rut input{
+    width: 100%;
+    height: 100%;
+}
+
+.selector {
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.selector select {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+.robot {
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: auto;
+    border: 1px ssolid black;
+    background-color: rgb(230, 240, 250);
+    font-size: 15px;
+}
+
+.robot i {
+    float: right;
+    line-height: 50px;
+}
+
+.btn {
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(112, 200, 112);
+}
+
+
+footer {
+    width: 100%;
+    height: 160px;
+    background-color: #092039;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    margin-top: 20px;
+    color: white;
+}
+
+footer .part_1{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+}
+
+footer .part_1 img{
+    width: 100px;
+}
+
+footer .part_2{
+    width: 30%;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+}
+
+footer .part_2 a {
+    color: white;
+}
+
+footer .part_2 a:hover {
+    color: aqua;
+}
+
+footer .part_3{
+    width: 30%;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+}
+
+footer .part_3 img {
+    width: 200px;
+}
+
+@media (max-width: 700px) {
+
+    footer {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .part_1{
+        width: 90%;
+        height: 200%;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    }
+    footer .part_2{
+        width: 90%;
+        height: 200%;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    }
+    footer .part_3{
+        width: 90%;
+        height: 200%;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    }
+    body {
+        background-color: white;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        border: none;
+        width: 98%;
+    }
+
+    form {
+        border: none;
+    }
+}
+

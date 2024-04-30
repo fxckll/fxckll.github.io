@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    height: 85%;
+    border-radius: 20px;
+    border: solid 1px;
+}
+
+.logito {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+}
+
+.logitos {
+    display: flex;
+}
+
+form {
+    padding: 0  30px;
+    text-align: center;
+}
+
+.input_box {
+    width: 100%;
+    height: 50px;
+    margin: 40px 0;
+}
+
+.input_box input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.links a{
+    padding: 5px 0;
+    color: black;
+}
+
+.links a:hover {
+    color: rgb(16, 115, 221);
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(16, 115, 221);
+    color: white;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(66, 147, 233);
+    text-decoration-line: underline;
+}
+
+.container .ayuda {
+    height: 50px;
+    padding-top: 20px;
+}
+
+.container .ayuda a {
+    color: black;
+    margin-top:20px ;
+}
+
+.container .ayuda a:hover {
+    color: rgb(68, 61, 61);
+}
+
+footer {
+    width: 100%;
+    height: 160px;
+    background-color: #092039;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    margin-top: 20px;
+    color: white;
+}
+
+footer .part_1{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+}
+
+footer .part_1 img{
+    width: 100px;
+}
+
+footer .part_2{
+    width: 30%;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+}
+
+footer .part_2 a {
+    color: white;
+}
+
+footer .part_2 a:hover {
+    color: aqua;
+}
+
+footer .part_3{
+    width: 30%;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+}
+
+footer .part_3 img {
+    width: 200px;
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        height: 90%;
+    }
+
+    footer {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .part_1{
+        width: 90%;
+        height: 200%;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    }
+    footer .part_2{
+        width: 90%;
+        height: 200%;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    }
+    footer .part_3{
+        width: 90%;
+        height: 200%;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        border: none;
+    }
+    main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+    
+}
