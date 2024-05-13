@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles_imc.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap" rel="stylesheet">
-    <title>INICIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>ICM Calculadora</title>
 </head>
-<body >
+<body>
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="logo">
-                <a href="#" class="nav-link">
+                <a href="index.html" class="nav-link">
                   <span class="link-text logo-text">Fxckll</span>
                   <svg
                     aria-hidden="true"
@@ -70,7 +71,7 @@
               </li>
         
               <li class="nav-item">
-                <a href="index_imc.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <svg
                     aria-hidden="true"
                     focusable="false"
@@ -123,57 +124,40 @@
                       ></path>
                     </g>
                   </svg>
-                  <span class="link-text">Rsespaldo</span>
+                  <span class="link-text">Respaldo</span>
                 </a>
               </li>
             </ul>
           </nav>
         </ul>
     </nav>
-    <main class="contenedor">
-      <div class="bubbles">
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:20;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:26;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:28;"></span>
-        <span style="--i:11;"></span>
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:26;"></span>
+    <main>
+      <h1>ICM calculadora</h1>
+      <p>El índice de masa corporal (IMC) es un indicador utilizado para evaluar el peso corporal en relación con la altura. Se calcula a partir de dos datos simples: el peso y la altura. La fórmula matemática para calcular el IMC es</p>
+
+      <h2>Sistema Ingles</h2>
+      <br><br>
+      <div class="caja" >
+        <div class="container">
+          <h2 class="titulo">Ingrese sus datos</h2>
+  
+          <label for="peso">peso (lbs)</label>
+          <input type="number" id="peso">
+          <br>
+          <label for="altura">altura (In)</label>
+          <input type="number" id="altura">
+          <br>
+          <button onclick="bmi()" class="btn-calcular">Calcular</button>
+          <button onclick="reload()" class="btn-reset">Reset</button>
+  
+          <h2 id="heading"></h2>
+          <p id="bmi-output"></p>
+          <p id="message"></p>
+  
+        </div>
       </div>
-      <div class="titulo">
-        <h1>cool website</h1>
-      </div>
-    </main>
-    <script src="assets/js/main.js"></script>
+
+      
+    <script src="assets/js/main_imc.js"></script>
 </body>
 </html>

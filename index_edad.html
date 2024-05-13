@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles_edad.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap" rel="stylesheet">
-    <title>INICIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Edad de tu Mascota</title>
 </head>
-<body >
+<body>
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="logo">
-                <a href="#" class="nav-link">
+                <a href="index.html" class="nav-link">
                   <span class="link-text logo-text">Fxckll</span>
                   <svg
                     aria-hidden="true"
@@ -41,7 +42,7 @@
                 </a>
               </li>
             <li class="nav-item">
-                <a href="index_edad.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <svg
                     aria-hidden="true"
                     focusable="false"
@@ -123,7 +124,7 @@
                       ></path>
                     </g>
                   </svg>
-                  <span class="link-text">Rsespaldo</span>
+                  <span class="link-text">Respaldo</span>
                 </a>
               </li>
             </ul>
@@ -131,49 +132,68 @@
         </ul>
     </nav>
     <main class="contenedor">
-      <div class="bubbles">
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:20;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:26;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:28;"></span>
-        <span style="--i:11;"></span>
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:26;"></span>
+      
+      <h1>Calcula la Edad de tu Mascota</h1>
+      <p>¿Te has preguntado alguna vez cuántos años tendría tu perro en su propio calendario? Con nuestra calculadora especializada, ahora puedes convertir fácilmente la edad humana a la edad verdadera de tu perro. Esta herramienta única te brinda una perspectiva más precisa sobre la edad de tu perro, permitiéndote entender mejor sus necesidades y etapas de vida.</p>
+
+
+     <div class="example">
+      <div>
+        <h2>Edad de un Perro</h2>
+        <p>Calcular la edad real de un perro en años humanos no es tan simple como multiplicar por siete su edad en años caninos. La verdad es que la relación entre la edad de un perro y la de un humano varía según su etapa de vida. Para eso se tiene la siguiente formula</p>
+
+        <div><h3>Formula</h3>
+          <div class="formulas">años humanos = 16 x ln(edad) + 31 </div>
+        </div>
+
       </div>
-      <div class="titulo">
-        <h1>cool website</h1>
+
+      <div>
+        <h2>Edad de un gato</h2>
+        <p>Calcular la edad de un gato en años humanos puede ser un poco más complejo que simplemente multiplicar por siete, ya que el tiempo no pasa igual durante los primeros años de desarrollo que cuando el gato es adulto. Aquí tienes dos métodos comunes para calcular la edad de tu gato:</p>
+        <div class="formulas"> 
+          <div><h3>Para gatos MAYORES a 6 años</h3>
+            <div>años humanos = (edad - 6) x 4</div></div>
+
+          <div><h3>Para gatos MENORES a 6 años</h3>
+            <div>años humanos = (edad x 19) ÷ 3</div></div>
+        </div>
+
       </div>
-    </main>
-    <script src="assets/js/main.js"></script>
+
+     </div>
+     <br>
+
+     <div class="calculator">
+        <div class="formu">
+          <h2>Datos de su Mascota</h2>
+
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre">
+          <br>
+        
+          <label for="edad">Edad</label>
+          <input type="number" id="edad">
+          <br>
+          <label for="tipo">Tipo</label>
+          <select name="tipo" id="tipo">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+          </select>
+          <br>
+          <button onclick="edad(), img()" class="btn-calcular">Calcular</button>
+          <button onclick="reload()" class="btn-reload">reset</button>
+          <br>
+
+
+          <h2 id="heading"></h2>
+          <p id="agePet"></p>
+        </div>
+        <div class="image">
+          <img src="assets/img/fondo.jpg" alt="mascota" id="imgchange">
+        </div>
+      
+     </div>
+    <script src="assets/js/main_edad.js"></script>
 </body>
 </html>
