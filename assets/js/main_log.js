@@ -35,4 +35,21 @@ function pass() {
         }
         console.log(data)
     }
-}   
+
+}
+
+
+function ingresar() {
+    var user = document.getElementById('user').value
+    var password = document.getElementById('password').value
+    let usuario = document.getElementById('usuario').value
+    let pass = document.getElementById('pass').value
+
+    console.log(user)
+    console.log(password)
+
+    if (user === usuario && password === pass) {
+        location.href = 'principal.html'
+    }
+
+}

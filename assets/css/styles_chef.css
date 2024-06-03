@@ -246,163 +246,71 @@ header {
 
 /*CONTENIDO*/
 
-main {
-    margin: 0;
-    padding: 0;
-}
-
 .present {
     width: 100%;
-    height: calc(100vh - 100px);
-    background-image: url(/assets/img/cocina.jfif);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 700px;
+    padding: 10px 50px;
 
-        h1{
-            color: var(--primero-color);
-            font-family: var(--type-marcador);
-            font-size: 30px;
-            padding: 0 100px;
+        h1 {
             letter-spacing: 3px;
-        }  
-} 
+            font-family: var(--type-marcador);
+            padding-left: 50px;
+        }
 
-main h2 {
-    padding: 0 100px;
-    margin: 0;
-    padding-top: 10px;
-    background-color: var(--quinto-color);
-    font-family: var(--type-marcador);
-    letter-spacing: 3px;
-}
-
-.recetas {
-    width: 100%;
-    height: 350px;
-    padding: 8px 80px;
-    background-color: var(--quinto-color);
-    display: flex;
-    flex-wrap: wrap;
-
-
-        .cards {
-            width: 250px;
-            height: 290px;
-            background-color: black;
-            border-radius: 10px;
-            overflow: hidden;
-            margin: 20px;
+        .gri {
+            width: 100%;
+            height: 590px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            
+                .foto {
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                    display: flex;
+                    overflow: hidden;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 10px 20px;
+                    
 
 
-                img{
-                    width: 210px;
-                    height: 210px;
-                    margin: 0 20px;
-                }
-
-                .desc {
-                    background-color: #74818B;
-                    width: 100%;
-                    height: 80px;
-
-                        a {
-                            color: #282430;
-                            text-decoration: none;
-                            font-family: var(--type-marcador);
-                            margin: 10px 20px;
+                        img {
+                            width: 250px;
+                            height: 250px;
+                            border-radius: 20px;
+                            box-shadow: 0px 3px 8px rgba(0,0,0,25%);
                         }
                 }
-        }
-}
 
-main h3 {
-    color: var(--quinto-color);
-    background-color: var(--cuarto-color);
-    padding: 0 100px;
-    padding-top: 10px;
-    margin: 0;
-    font-family: var(--type-marcador);
-    letter-spacing: 3px;
-    font-size: 30px;
-}
-
-.chef {
-    width: 100%;
-    height: 350px;
-    padding: 8px 80px;
-    background-color: var(--cuarto-color);
-    display: flex;
-    flex-wrap: wrap;
-
-
-        .cards {
-            width: 250px;
-            height: 290px;
-            background-color: black;
-            border-radius: 10px;
-            overflow: hidden;
-            margin: 20px;
-
-
-                img{
-                    width: 210px;
-                    height: 210px;
-                    margin: 0 20px;
+                .text-1 {
+                    background-color: var(--quinto-color);
+                    grid-column: 2/5;
+                    padding: 5px 40px;
+                    margin: 5px 5px;
+                    border-radius: 10px;
+                    box-shadow: 0px 3px 8px rgba(0,0,0,25%);
                 }
 
-                .desc {
-                    background-color: #74818B;
-                    width: 100%;
-                    height: 80px;
+                .text-2 {
+                    background-color: var(--quinto-color);
+                    padding: 20px 40px;
+                    margin: 5px 5px;
+                    border-radius: 10px;
+                    box-shadow: 0px 3px 8px rgba(0,0,0,25%);
 
-                    a {
-                        color: #282430;
-                        text-decoration: none;
-                        font-family: var(--type-marcador);
-                        margin: 10px 20px;
-                    }
+                }
+
+                .text-3 {
+                    background-color: var(--quinto-color);
+                    grid-column: 2/5;
+                    padding: 5px 40px;
+                    margin: 5px 5px;
+                    border-radius: 10px;
+                    box-shadow: 0px 3px 8px rgba(0,0,0,25%);
                 }
         }
 }
-
-
-
-.historia {
-    width: 100%;
-    height: 650px;
-    padding: 8px 100px;
-    background-color: var(--quinto-color);
-
-        .ctn {
-            display: flex;
-
-            .ctn1{
-
-
-                img {
-                    width: 600px;
-                }
-            }
-        }
-        
-        .ctn2 {
-            padding: 10px 50px;
-            letter-spacing: 2px;
-            font-family: var(--type-cursiva_2);
-            font-size: 18px;
-        }
-
-        .texto {
-            padding: 30px 50px;
-            letter-spacing: 2px;
-            font-family: var(--type-cursiva_2);
-            font-size: 18px;
-        
-        } 
-            
-}
-
 
 
 
