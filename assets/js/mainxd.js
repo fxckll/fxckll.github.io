@@ -1,6 +1,6 @@
 let recetas=[
     {
-        nombre:"pollo asado",
+        nombre:"Pollo Asado",
         img: '<img src="assets/img/pollo.jpg" alt="">',
         video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/OP2kvXrqaGI?si=Z6wpHSrXZKO7Z3Ww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         ingredientes:[
@@ -12,7 +12,7 @@ let recetas=[
         ]
     },
     {
-        nombre: "pasta carbonara",
+        nombre: "Pasta Carbonara",
         img: '<img src="assets/img/pasta.jpg" alt="">',
         video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/3AAdKl1UYZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         ingredientes: [
@@ -35,7 +35,7 @@ let recetas=[
         ]
     },
     {
-        nombre: "ensalada cesar",
+        nombre: "Ensalada Cesar",
         img: '<img src="assets/img/ensalada.webp" alt="">',
         video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/4UotHl9Ua9k?si=xzj6N4lB-1QhJniV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         ingredientes: [
@@ -62,7 +62,7 @@ let recetas=[
         ]
     },
     {
-        nombre: "tacos de pescado",
+        nombre: "Tacos de Pescado",
         img: '<img src="assets/img/tacos.jpg" alt="">',
         video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/ADoknnhlC5g?si=A1fa7mpSwHDn0RBb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         ingredientes: [
@@ -89,16 +89,28 @@ let recetas=[
 ]
 
 function buscador(){
-    const name = document.getElementById('recipeIn').value.toLowerCase();
 
+    let name = document.getElementById('recipeIn').value;
+    let name_cool = name.replace(/\s+/g, ' ').replace(/^\s+|\s+$/g, '');
 
+    let expresion = new RegExp(name_cool, 'gi');
 
+    document.getElementById('name_r').innerText = ''; 
+    document.getElementById('imagen_r').innerHTML = '';
+    document.getElementById('video').innerHTML = '';
+    document.getElementById('ingredient').innerText = '';
+    document.getElementById('prepar').innerText = '';
+    document.getElementById('ingredientes').innerHTML = '';
+    document.getElementById('preparacion').innerHTML = '';
 
     let  nombre;
     let  img;
     let  video;
+
     for ( let i = 0; i < recetas.length; i++){
-        if(recetas[i].nombre == name){
+        if(expresion.test(recetas[i].nombre)){
+            console.log('coincidencia encontrada');
+            console.log(recetas[i]);
             nombre = recetas[i].nombre;
             img = recetas[i].img;
             video = recetas[i].video; //;

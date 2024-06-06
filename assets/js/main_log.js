@@ -9,7 +9,7 @@ function pass() {
     let warnings = ''
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
-    if (user.value.length < 5) {
+    if (user.value.length < 3) {
         warnings += 'El nombre no es valido <br>'
         entrar = true
     }

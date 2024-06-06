@@ -250,66 +250,65 @@ header {
     width: 100%;
     height: 700px;
     padding: 10px 50px;
+}
 
-        h1 {
-            letter-spacing: 3px;
-            font-family: var(--type-marcador);
-            padding-left: 50px;
-        }
+.present  h1 {
+    letter-spacing: 3px;
+    font-family: var(--type-marcador);
+    padding-left: 50px;
+}
 
-        .gri {
-            width: 100%;
-            height: 590px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            
-                .foto {
-                    grid-column: 1/2;
-                    grid-row: 1/2;
-                    display: flex;
-                    overflow: hidden;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 10px 20px;
-                    
+.present .gri {
+    width: 100%;
+    height: 590px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 
+.present .gri .foto {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
 
-                        img {
-                            width: 250px;
-                            height: 250px;
-                            border-radius: 20px;
-                            box-shadow: 0px 3px 8px rgba(0,0,0,25%);
-                        }
-                }
+}
 
-                .text-1 {
-                    background-color: var(--quinto-color);
-                    grid-column: 2/5;
-                    padding: 5px 40px;
-                    margin: 5px 5px;
-                    border-radius: 10px;
-                    box-shadow: 0px 3px 8px rgba(0,0,0,25%);
-                }
+.present .gri .foto img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,25%);
+}
 
-                .text-2 {
-                    background-color: var(--quinto-color);
-                    padding: 20px 40px;
-                    margin: 5px 5px;
-                    border-radius: 10px;
-                    box-shadow: 0px 3px 8px rgba(0,0,0,25%);
+.present .gri .text-1 {
+    background-color: var(--quinto-color);
+    grid-column: 2/5;
+    padding: 5px 40px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,25%);
+}
 
-                }
+.present .gri .text-2 {
+    background-color: var(--quinto-color);
+    padding: 20px 40px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,25%);
 
-                .text-3 {
-                    background-color: var(--quinto-color);
-                    grid-column: 2/5;
-                    padding: 5px 40px;
-                    margin: 5px 5px;
-                    border-radius: 10px;
-                    box-shadow: 0px 3px 8px rgba(0,0,0,25%);
-                }
-        }
+}
+
+.present .gri .text-3 {
+    background-color: var(--quinto-color);
+    grid-column: 2/5;
+    padding: 5px 40px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,25%);
 }
 
 
@@ -437,6 +436,80 @@ footer {
         margin-left: 30px;
         color: var(--cuarto-color);
     }
+
+    .present {
+        height: auto;
+       
+    }
+
+    .present  h1 {
+        position: absolute;
+        letter-spacing: 3px;
+        font-family: var(--type-marcador);
+        padding-left: 10%;
+    }
+
+    .present .gri {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns:  1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+            
+    }
+
+    .present .gri  .foto {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 20px;
+            
+    }
+
+    .present .gri .foto img {
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+        box-shadow: 0px 3px 8px rgba(0,0,0,25%);
+    }
+
+    .present .gri .text-1 {
+        background-color: var(--quinto-color);
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 5px 40px;
+        margin: 5px 5px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 8px rgba(0,0,0,25%);
+    }
+
+
+    .present .gri .text-2 {
+        display: flex;
+        align-items: center;
+        background-color: var(--quinto-color);
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding: 20px 40px;
+        margin: 90px 5px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 8px rgba(0,0,0,25%);
+
+    }
+
+    .present .gri .text-3 {
+        background-color: var(--quinto-color);
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding: 5px 40px;
+        margin: 5px 5px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 8px rgba(0,0,0,25%);
+    }
+
 }
 
 @media(max-width: 768px){
@@ -459,7 +532,71 @@ footer {
     footer .caja-3 a {
         margin: 0 auto;
     }
-}
+    
+    .present {
+        height: auto;
+
+    }
+
+    .present .gri {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns:  auto ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+             
+    }
+
+    .present .gri .foto {
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 20px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+
+    }
+
+    .present .gr .foto img {
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+        box-shadow: 0px 3px 8px rgba(0,0,0,25%);
+    }
+
+    .present .gri .text-1 {
+        background-color: var(--quinto-color);
+        padding: 5px 40px;
+        margin: 5px 5px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 8px rgba(0,0,0,25%);
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .present .gri .text-2 {
+        display: flex;
+        align-items: center;
+        background-color: var(--quinto-color);
+        padding: 0 40px;
+        margin: 10px 5px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 8px rgba(0,0,0,25%);
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .present .gri .text-3 {
+        background-color: var(--quinto-color);
+        grid-column: 1/2;
+        padding: 5px 40px;
+        margin: 5px 5px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 8px rgba(0,0,0,25%);
+        grid-row: 4/5;
+    }
+}   
 
 @media(max-width: 550px) {
     .modal-dialog {
@@ -495,7 +632,3 @@ footer {
         text-align: end;
     }
 }
-
-
-
-
