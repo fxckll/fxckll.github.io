@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --base-clr: #11121a;
+    --line-clr: #42434a;
+    --hover-clr: #222533;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+}
+body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--base-clr);
+    color: var(--text-clr);
+}
+
+nav {
+    display: flex;
+    height: 100px;
+    width: 100vi;
+    border-bottom: 1px solid var(--line-clr);
+    align-items: center;
+    justify-content: space-between;
+    svg {
+        margin: auto;
+        fill: var(--text-clr);
+        margin-left: 50px;
+        transition: 300ms ease-in-out;
+    }
+    svg:hover {
+        fill: var(--accent-clr);
+    }
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    list-style: none;
+    flex: 1;
+}
+nav ul li a {
+    text-decoration: none;
+    border-radius: .5em;
+    padding: .85em;
+    color: var(--text-clr);
+    font-weight: 500;
+    position: relative;
+    transition: 200ms ease;
+    padding: 4px 0;
+}
+nav ul li.active a {
+    color: var(--accent-clr);
+}
+
+nav ul li a:hover {
+    color: var(--accent-clr);
+}
+ 
+nav ul li a::before,
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-clr);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+nav ul li a::before {
+    top: 0; /* Línea en la parte superior */
+    transform-origin: left;
+  }
+  
+nav ul li a::after {
+    bottom: 0; /* Línea en la parte inferior */
+    transform-origin: right;
+  }
+  
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    transform: scaleX(1);
+  }
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 110px);
+}
+
+.login-container {
+    background-color: var(--base-clr);
+    padding: 40px 30px;
+    border-radius: 8px;
+    border: 1px solid var(--line-clr);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: var(--accent-clr);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los campos de entrada */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 0.9em;
+    color: var(--secondary-text-clr);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 94%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: var(--accent-clr);
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 87, 51, 0.3);
+}
+
+/* Estilos del botón */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--accent-clr);
+    color: var(--text-clr);
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color:  #474bc3;
+}
+
+/* Texto de registro */
+.sign-up-prompt {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: var(--secondary-text-clr);
+}
+
+.sign-up-prompt a {
+    color: var(--accent-clr);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sign-up-prompt a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.invalid {
+    border-color: red;
+}

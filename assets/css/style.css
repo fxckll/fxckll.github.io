@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --base-clr: #11121a;
+    --line-clr: #42434a;
+    --hover-clr: #222533;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+}
+body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--base-clr);
+    color: var(--text-clr);
+}
+
+nav {
+    display: flex;
+    height: 100px;
+    width: 100vi;
+    border-bottom: 1px solid var(--line-clr);
+    align-items: center;
+    justify-content: space-between;
+    svg {
+        margin: auto;
+        fill: var(--text-clr);
+        margin-left: 50px;
+        transition: 300ms ease-in-out;
+    }
+    svg:hover {
+        fill: var(--accent-clr);
+    }
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    list-style: none;
+    flex: 1;
+}
+nav ul li a {
+    text-decoration: none;
+    border-radius: .5em;
+    padding: .85em;
+    color: var(--text-clr);
+    font-weight: 500;
+    position: relative;
+    transition: 200ms ease;
+    padding: 4px 0;
+}
+nav ul li.active a {
+    color: var(--accent-clr);
+}
+
+nav ul li a:hover {
+    color: var(--accent-clr);
+}
+ 
+nav ul li a::before,
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-clr);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+nav ul li a::before {
+    top: 0; /* Línea en la parte superior */
+    transform-origin: left;
+  }
+  
+nav ul li a::after {
+    bottom: 0; /* Línea en la parte inferior */
+    transform-origin: right;
+  }
+  
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    transform: scaleX(1);
+  }
+
+
+
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--base-clr);
+    color: var(--text-clr);
+    border-radius: 8px;
+    border: 1px solid var(--line-clr);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: var(--text-clr);
+    background-color: var(--accent-clr);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: var(--text-clr);
+    color: var(--base-clr);
+}
+
+/* Sección de Beneficios */
+.benefits {
+    margin: 40px 0;
+}
+
+.benefits h2 {
+    font-size: 1.8em;
+    color: var(--text-clr);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefits li {
+    background-color: var(--text-clr);
+    color: var(--base-clr);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--accent-clr);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de Recursos */
+.resources {
+    margin: 40px 0;
+}
+
+.resources h2 {
+    font-size: 1.8em;
+    color: var(--accent-clr);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resources li a {
+    text-decoration: none;
+    color: var(--accent-clr);
+    font-weight: bold;
+    transition: 300ms ease-in-out;
+}
+
+.resources li a:hover {
+    text-decoration: underline;
+    color: var(--text-clr);
+}
+
+/* Sección de Consejos */
+.tips {
+    margin: 40px 0;
+}
+
+.tips h2 {
+    font-size: 1.8em;
+    color: var(--accent-clr);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tips ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.tips li {
+    background-color: var(--text-clr);
+    color: var(--base-clr);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--accent-clr);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--base-clr);
+    color: white;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--accent-clr);
+    text-decoration: none;
+    transition: 300ms ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--text-clr);
+}
